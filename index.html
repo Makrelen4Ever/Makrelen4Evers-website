@@ -10,6 +10,19 @@
                 margin-right: auto;
 
                 border-radius: 15px;
+
+                transition: all ease-in .25s;
+                transform:scale(.9);
+            }
+
+            .Artwork:hover {
+                max-width: 75%;
+                margin-left: 12%;
+                margin-right: auto;
+
+                border-radius: 15px;
+
+                transform:scale(1);
             }
 
             @font-face {font-family: 'Melaround-Regular'; src: url(./Melaround-Regular.woff2) format('woff2');}
@@ -18,11 +31,28 @@
                 justify-content: center;
                 align-items: center;
 
+                margin-left: 5%;
+                margin-right: 5%;
+
                 font-size: 20px;
                 font-family: 'Melaround-Regular';
 
                 color: white;
             }
+
+            .link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-left: 20%;
+                margin-right: 20%;
+
+                font-size: 20px;
+                font-family: 'Melaround-Regular';
+
+                color: white;
+            }   
 
             .email {
                 display: flex;
@@ -75,18 +105,13 @@
                 right: 5%;
                 bottom: 5%;
 
-                max-width: 7%;
+                max-width: 50px;
             }
 
         </style>
     </head>
 
     <body>
-
-        <a href="#M">
-            <img src="Arrow.png" class="arrow">
-        </a>
-
         <img src="Moutline.png" id="M">
 
         <h2>
@@ -109,14 +134,18 @@
             
         </ul>
 
-        <a href="https://www.artstation.com/makrelen4ever" class="email">
-            <p>
+        <a href="https://www.artstation.com/makrelen4ever" target="_blank" class="email">
+            <p class="link">
                 Check out my artstation.
             </p>
         </a>
 
         <p class="email">Contact me with E-mail</p>
         <p class="email">Makrelen4ever@gmail.com</p>
+
+        <a href="#M">
+            <img src="Arrow.png" class="arrow">
+        </a>
 
     </body>
 </html>
