@@ -45,7 +45,7 @@
                 color: white;
             }
 
-            .M {
+            #M {
 
                 display: flex;
 
@@ -66,6 +66,16 @@
             html, body {
                 max-width: 100%;
                 overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .arrow {
+                position: fixed;
+
+                right: 5%;
+                bottom: 5%;
+
+                max-width: 7%;
             }
 
         </style>
@@ -73,10 +83,14 @@
 
     <body>
 
-        <img src="Moutline.png" class="M">
+        <a href="#M">
+            <img src="Arrow.png" class="arrow">
+        </a>
+
+        <img src="Moutline.png" id="M">
 
         <h2>
-            Welcome to my website!
+            Welcome to my website
         </h2>
         <hr>
         <p>
@@ -85,17 +99,24 @@
 
         <hr>
 
-        <p>Check out my art here:</p>
+        <p>You can see some of my art here:</p>
 
         <ul>
             <img src="DeadMansMoon_BlueCompressed.jpg" class="Artwork">
             <img src="LiminalDarknessCompressed.jpg" class="Artwork">
             <img src="StairCaseCompressed.jpg" class="Artwork">
             <img src="SciFiCablesCompressed.jpg" class="Artwork">
-            <p class="email">Contact me with E-mail</p>
-            <p class="email">Makrelen4ever@gmail.com</p>
+            
         </ul>
 
+        <a href="https://www.artstation.com/makrelen4ever" class="email">
+            <p>
+                Check out my artstation.
+            </p>
+        </a>
+
+        <p class="email">Contact me with E-mail</p>
+        <p class="email">Makrelen4ever@gmail.com</p>
 
     </body>
 </html>
